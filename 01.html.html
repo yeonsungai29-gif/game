@@ -56,7 +56,9 @@ window.UsagiAccounts={raw,PREFIX,ACTIVE,USERS,active};
 .costumeItem{background:#fff5d4;border-radius:12px;padding:10px;text-align:center}
 @keyframes avatarCheer{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(5deg)}}
 @media(max-width:650px){#avatarArea{grid-template-columns:minmax(0,1fr) 105px;gap:5px}#avatarSide{padding:6px}#avatarVisual{font-size:48px}#avatarHat{font-size:24px;top:-12px}#avatarRank{font-size:14px}#avatarCheer{font-size:11px}}
-</style></head><body>
+</style><link rel="stylesheet" href="./site-navigation.css"></head><body>
+<nav class="studio-nav" aria-label="사이트 탐색"><a class="studio-return" href="./index.html#game-title">← 게임 목록</a></nav>
+
 <div id="startupNotice" style="position:relative;z-index:2;margin:12px auto;padding:14px;max-width:640px;background:#fff8d5;border:2px solid #e4bc55;border-radius:14px;color:#493516;font:15px system-ui;text-align:center">
 🐰 우사기 오목 게임을 불러오는 중이에요…
 </div>
@@ -81,7 +83,7 @@ window.addEventListener('unhandledrejection',function(e){
     <label for="loginPin">비밀번호 (4~12자리)</label>
     <input id="loginPin" type="password" minlength="4" maxlength="12" autocomplete="current-password" placeholder="비밀번호">
     <div class="loginRow"><button id="loginSubmit" type="button">로그인</button><button id="registerSubmit" type="button">새 계정 만들기</button></div>
-    <button id="guestPlay" type="button" style="width:100%;margin-top:10px;background:#fff;border:1px solid #d9ad48">로그인 없이 먼저 플레이하기</button><p id="accountMessage" role="status"></p>
+    <button id="guestPlay" type="button" style="width:100%;margin-top:10px;background:#fff;border:1px solid #d9ad48">로그인 없이 먼저 플레이하기</button><a class="studio-return" href="./index.html#game-title">← 게임 목록</a><p id="accountMessage" role="status"></p>
     <small>이 버전은 서버가 없는 <b>기기 내 로컬 계정</b>입니다. 다른 기기와 자동 동기화되지 않으며, 브라우저 데이터를 삭제하면 기록도 사라질 수 있습니다. 비밀번호를 잊으면 복구할 수 없습니다. 개인정보 보호가 필요한 실제 온라인 로그인 서비스는 아닙니다.</small>
   </div>
 </div>

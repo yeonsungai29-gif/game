@@ -22,7 +22,32 @@ h1 em{color:#9a586c}
   .music{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;padding:18px;margin:28px 0 36px}
   .music .play{grid-column:1/-1}
 }
-</style></head><body><div class="shell"><header><a class="brand" href="./index.html"><span class="logo">🐰</span> USAGI GAME STUDIO</a><nav aria-label="메인 메뉴"><a class="top-pill" href="#game-title">게임</a><a class="top-pill" href="#music-title">OST</a></nav></header>
+
+.shell > header{position:sticky;top:0;z-index:5;background:var(--cream)}
+#game-title,#music-title{scroll-margin-top:94px}
+.subtitle,.section-title span,.card-content p,.tag,.top-pill,.hero-stamp{color:#74615a}
+footer .top-pill{margin-bottom:12px}
+@media(max-width:600px){
+  .hero{padding:24px 0 26px}
+  .hero h1{font-size:clamp(31px,9vw,45px);margin:12px 0}
+  .hero-stamp{margin-top:16px}
+  #game-title,#music-title{scroll-margin-top:78px}
+  .brand{letter-spacing:.03em}
+  .logo{flex:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style><meta name="description" content="우사기와 오목, 낚시, 당근 퍼즐을 즐기고 여행길에 어울리는 OST를 들어보세요.">
+<link rel="canonical" href="https://yeonsungai29-gif.github.io/game/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="우사기의 작은 여행 | 게임과 OST">
+<meta property="og:description" content="우사기와 오목, 낚시, 당근 퍼즐을 즐기고 여행길에 어울리는 OST를 들어보세요.">
+<meta property="og:url" content="https://yeonsungai29-gif.github.io/game/">
+<meta property="og:image" content="https://yeonsungai29-gif.github.io/game/share-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="크림색 배경에 우사기의 작은 여행 제목과 토끼 그림">
+</head><body><div class="shell" id="top"><header><a class="brand" href="./index.html"><span class="logo">🐰</span> USAGI GAME STUDIO</a><nav aria-label="메인 메뉴"><a class="top-pill" href="#game-title">게임</a><a class="top-pill" href="#music-title">OST</a></nav></header>
 <main><section class="hero"><span class="spark one">✳</span><span class="spark two">✧</span><div class="eyebrow">USAGI GAME STUDIO</div><h1>우사기의<br><em>작은 여행</em></h1><p class="subtitle">오목 한 판, 느긋한 낚시, 알록달록 당근 퍼즐.<br>오늘은 우사기와 어디로 가볼까요?</p><a class="hero-stamp" href="#game-title">게임 고르기 ↓</a></section>
 <section aria-labelledby="game-title"><div class="section-title"><h2 id="game-title">게임 둘러보기 <span aria-hidden="true">✿</span></h2><span>마음에 드는 게임을 선택해 주세요</span></div><div class="cards"><article class="game-card card-0">
  <div class="art art-0" aria-hidden="true"><span class="float-deco d1">✦</span><span class="mascot">♟</span><span class="float-deco d2">●</span><span class="game-no">01</span></div>
@@ -44,4 +69,4 @@ h1 em{color:#9a586c}
     <p>우사기의 작은 여행을 떠올리며 만든 노래 세 곡을 들어보세요.</p>
   </div>
   <a class="play" href="./usagi_suno_music_index.html">OST 들으러 가기 <span aria-hidden="true">↗</span></a>
-</section></main><footer>© USAGI GAME STUDIO · GAMES &amp; ORIGINAL MUSIC ♡</footer></div></body></html>
+</section></main><footer><a class="top-pill" href="#top">↑ 맨 위로</a><br>© USAGI GAME STUDIO · GAMES &amp; ORIGINAL MUSIC ♡</footer></div></body></html>
